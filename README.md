@@ -3,6 +3,7 @@ Simple tool to generate skeleton site
 
 
 -How to run-
+
 Install Python 2.7
 Navigate to QuickSite folder in terminal
 
