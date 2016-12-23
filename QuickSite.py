@@ -21,13 +21,16 @@ fo.write("<!DOCTYPE html>\n\
         <link rel=\"stylesheet\" type=\"text/css\" href=\""+stylesheet+"\">\n\
     </head>\n\
     <body>\n\
+      <h2>Big Text</h2>\
+      <div class=\"myClass\"</div>\
     </body>\n\
 </html>")
 fo.close()
 
 fo = open(script, "w")
-fo.write("$(document).ready ( function(){\n\n\})")
+fo.write("$(document).ready ( function(){    \n//logic goes here\nconsole.log(\"Hello World!\");\n})")
 fo = open(stylesheet, "w")
+fo.write("h2 {\ncolor: red}\n.myClass {\nbackground-color: blue;\nheight: 100px;\nwidth: 100px;\nposition: absolute;\nleft: 50%;\nright: 50%\n}")
 fo.close()
 
 
